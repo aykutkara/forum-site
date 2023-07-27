@@ -17,4 +17,8 @@ export class TopicService {
   getTopics(){
     return this._http.get<ITopic[]>(this.api + "/topics");
   }
+
+  addTopic(topic: ITopic): Observable<ITopic>{
+    return this._http.post<ITopic>(this.api + "/topics", topic);
+  }
 }

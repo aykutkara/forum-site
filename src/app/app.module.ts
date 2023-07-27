@@ -8,6 +8,8 @@ import { ForumTopicsComponent } from './components/forum-topics/forum-topics.com
 import { TopicCardComponent } from './components/topic-card/topic-card.component';
 import {TruncatePipe} from "./pipes/truncate.pipe";
 import {HttpClientModule} from "@angular/common/http";
+import {TopicFilterPipe} from "./pipes/topic-filter.pipe";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -15,13 +17,16 @@ import {HttpClientModule} from "@angular/common/http";
     NavbarComponent,
     ForumTopicsComponent,
     TopicCardComponent,
-    TruncatePipe
+    TruncatePipe,
+    TopicFilterPipe
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        FormsModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -5,33 +5,88 @@
 
     </div>
     <div class="forum-topics__top__right">
-      <button  class="new-topic-btn btn btn-primary">+ Yeni Konu</button>
+      <button (click)="openModal()"  class="new-topic-btn btn btn-primary">+ Yeni Konu</button>
       <div class="dropdown">
         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Sıralama
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Tarih - Eskiden Yeniye</a></li>
-          <li><a class="dropdown-item" href="#">Tarih - Yeniden Eskiye</a></li>
-          <li><a class="dropdown-item" href="#">Görüntülenme - Çoktan Aza</a></li>
-          <li><a class="dropdown-item" href="#">Görüntülenme - Azdan Çoğa</a></li>
+          <li><a class="dropdown-item" href="#" (click)="getOldestTopics()">Tarih - Eskiden Yeniye</a></li>
+          <li><a class="dropdown-item" href="#" (click)="getNewestTopics()">Tarih - Yeniden Eskiye</a></li>
+          <li><a class="dropdown-item" href="#" (click)="getViewsHighToLow()">Görüntülenme - Çoktan Aza</a></li>
+          <li><a class="dropdown-item" href="#" (click)="getViewsLowToHigh()">Görüntülenme - Azdan Çoğa</a></li>
         </ul>
       </div>
     </div>
   </div>
   <hr>
   <div class="forum-topics__content">
-    <app-topic-card [topic]="topic" *ngFor="let topic of topics"></app-topic-card>
+    <app-topic-card [topic]="topic" *ngFor="let topic of paginatedTopics | topicFilter : sortType "></app-topic-card>
   </div>
   <div class="forum-topics__bottom">
     <nav aria-label="Page navigation example">
       <ul class="pagination">
-        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        <li class="page-item" [ngClass]="{ 'disabled': currentPage === 1 }">
+          <a class="page-link" href="#" (click)="changePage(currentPage - 1)">Previous</a>
+        </li>
+        <li class="page-item" *ngFor="let page of totalPages" [ngClass]="{ 'active': page === currentPage }">
+          <a class="page-link" href="#" (click)="changePage(page)">{{ page }}</a>
+        </li>
+        <li class="page-item" [ngClass]="{ 'disabled': currentPage === totalPage }">
+          <a class="page-link" href="#" (click)="changePage(currentPage + 1)">Next</a>
+        </li>
       </ul>
     </nav>
+  </div>
+</div>
+
+<div class="modal" id="topic-modal" *ngIf="isModalOpen">
+  <div class="modal-dialog modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Yeni Konu Oluştur</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="closeModal()"></button>
+      </div>
+      <form [formGroup] ="topicForm" (ngSubmit)="addNewTopic()">
+        <div class="modal-body">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Konu Başlığı</span>
+            <input
+                    formControlName="title"
+                    type="text"
+                    class="form-control"
+                    aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default"
+                    [ngClass]="{ 'invalid-input': topicForm.get('title')?.invalid && topicForm.get('title')?.touched }"
+            >
+          </div>
+          <div *ngFor="let tag of tags.controls; let i = index">
+            <div [formGroup] = tag>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default2">Etiket</span>
+                <input
+                        formControlName="tagName"
+                        type="text"
+                        class="form-control"
+                        aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-default2"
+                        [ngClass]="{ 'invalid-input': tag.get('tagName')?.invalid && tag.get('tagName')?.touched }"
+                >
+                <span class="input-group-text" >
+                  <button type="button" class="btn btn- danger p-0" (click)="deleteTag(i)">X</button>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-primary mb-2" (click)="addTag()">Etiket Ekle</button>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="closeModal()">Kapat</button>
+          <button type="submit" class="btn btn-primary">Kaydet</button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>

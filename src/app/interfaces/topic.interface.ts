@@ -3,6 +3,6 @@ export interface ITopic {
   userId: number;
   title: string;
   views: number;
-  tags: string[];
+  tags: string[] | undefined;
   date : string;
 }

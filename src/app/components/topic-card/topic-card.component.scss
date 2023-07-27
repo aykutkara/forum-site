@@ -12,6 +12,7 @@
   @include align-items-center;
   margin: 0.75rem 0.5rem;
   border: 1px solid $text-color;
+  border-left: none;
   border-radius: 0.5rem;
   &--img{
     width: 2.3rem;
@@ -28,9 +29,10 @@
   &--username{
     border-right: 1px solid $text-color;
     height: 2.3rem;
-    min-width: 5rem;
+    min-width: 8rem;
+
     margin: 0;
-    padding-right: 2rem;
+    padding-right: 1rem;
 
     @include mobile{
       min-height: 3rem;
@@ -46,9 +48,10 @@
   &--topic-title{
     border-right: 1px solid $text-color;
     height: 2.3rem;
-    min-width: 25rem;
+    min-width: 26rem;
     margin: 0;
 
+    padding: 0 0.5rem;
     @include mobile{
       min-width: 10rem;
       min-height: 3rem;
@@ -68,6 +71,7 @@
     margin: 0;
     padding: 0 2rem;
     text-align: center;
+    min-width: 14rem;
 
     @include mobile{
       display: none;
@@ -81,14 +85,27 @@
   &--topic-views{
     height: 2.3rem;
     margin: 0;
-    padding: 0 2rem;
+    padding: 0 0.5rem;
     text-align: center;
-
+    min-width: 5rem;
     @include mobile{
       display: none;
     }
     @include tablet{
       display: none;
     }
+  }
+
+  &__setting{
+    @include align-items-center;
+    height: 2.3rem;
+    border-left: 1px solid $text-color;
+    padding: 0 .3rem;
+
+    &--btn{
+      background-color: transparent;
+      border: none;
+    }
+
   }
 }

@@ -14,6 +14,8 @@ export class TopicCardComponent implements OnInit{
 
     users: IUser[] = [];
     currentUser: IUser | any =[];
+
+
     constructor(private userService : UserService) { }
 
     ngOnInit(): void {
@@ -28,6 +30,8 @@ export class TopicCardComponent implements OnInit{
 
     getCurrentUser(userId: number) {
       this.currentUser = this.users.find(user => user.id === userId);
-      console.log(this.currentUser);
     }
+
+
+
 }

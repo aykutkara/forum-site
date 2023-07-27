@@ -10,12 +10,16 @@ export class UserService {
 
   api :string = "http://localhost:3000";
 
+
   constructor(private _http: HttpClient) {
-
   }
-
 
   getUsers(): Observable<IUser[]> {
     return this._http.get<IUser[]>(this.api + "/users");
   }
+
+  addUser(user: IUser): Observable<IUser> {
+    return this._http.post<IUser>(this.api + "/users", user);
+  }
+
 }

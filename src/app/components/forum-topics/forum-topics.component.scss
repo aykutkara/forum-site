@@ -40,5 +40,16 @@
     @include align-items-center;
     justify-content: center;
 
+    .disabled{
+      cursor: no-drop;
+    }
+
   }
 }
+#topic-modal{
+  display: block;
+}
+.invalid-input {
+  border: 1px solid red;
+}
+

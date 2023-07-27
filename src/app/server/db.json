@@ -32,37 +32,90 @@
       "userId": 1,
       "title": "Yeni 40 Serisi ekran kartarı için ne düşünüyorsunuz?",
       "views": 82,
-      "tags" : [
+      "tags": [
         "ekran kartı",
         "40 serisi",
         "nvidia"
       ],
-      "date" : "26-07-2023"
+      "date": "26-07-2023 10:10:47"
     },
     {
       "id": 2,
       "userId": 4,
       "title": "Bu monitörü almalı mıyım?",
       "views": 32,
-      "tags" : [
+      "tags": [
         "monitör",
         "teknoloji",
         "bilgisayar"
       ],
-      "date" : "26-07-2023"
+      "date": "26-07-2023 18:31:47"
     },
     {
       "id": 3,
       "userId": 2,
       "title": "Bu monitörü almalı mıyım?",
       "views": 67,
-      "tags" : [
+      "tags": [
         "monitör",
         "teknoloji",
         "bilgisayar"
       ],
-      "date" : "27-07-2023"
+      "date": "27-07-2023 23:21:27"
+    },
+    {
+      "id": 4,
+      "userId": 5,
+      "title": "asdasd",
+      "views": 0,
+      "tags": [],
+      "date": "27-07-2023 16:38:33"
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "title": "Deneme123",
+      "views": 0,
+      "tags": [
+        {
+          "tagName": "araba"
+        }
+      ],
+      "date": "27-07-2023 16:38:58"
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "title": "ssa",
+      "views": 0,
+      "tags": [
+        {
+          "tagName": "a"
+        },
+        {
+          "tagName": "b"
+        },
+        {
+          "tagName": "c"
+        }
+      ],
+      "date": "27-07-2023 16:39:14"
+    },
+    {
+      "id": 7,
+      "userId": 4,
+      "title": "sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo ",
+      "views": 0,
+      "tags": [],
+      "date": "27-07-2023 16:45:18"
+    },
+    {
+      "id": 8,
+      "userId": 5,
+      "title": "sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo ",
+      "views": 9999999,
+      "tags": [],
+      "date": "27-07-2023 16:45:35"
     }
   ]
-
 }

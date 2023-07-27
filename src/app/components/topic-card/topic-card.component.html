@@ -1,7 +1,13 @@
 <div class="topic-card">
   <img class="topic-card--img" src="{{currentUser.imageUrl}}" alt="">
   <p class="topic-card--username">{{currentUser.username}}</p>
-  <p class="topic-card--topic-title">{{topic.title | truncate : 53}}</p>
+  <p class="topic-card--topic-title">{{topic.title | truncate : 49}}</p>
   <p class="topic-card--topic-date">{{topic.date}}</p>
-  <p class="topic-card--topic-views">{{topic.views}}</p>
+  <p class="topic-card--topic-views">{{topic.views }}</p>
+  <div class="topic-card__setting">
+    <button class="topic-card__setting--btn">
+      <i class="fas fa-ellipsis-vertical"></i>
+    </button>
+  </div>
 </div>
+
