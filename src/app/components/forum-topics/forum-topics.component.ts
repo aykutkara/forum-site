@@ -20,7 +20,6 @@ export class ForumTopicsComponent implements OnInit {
     this.topics = this.topicService.topics.subscribe(
       (data : ITopic[]) => {
         this.topics = data;
-        console.log(this.topics);
       }
     )
   }

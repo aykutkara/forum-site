@@ -1,5 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {ITopic} from "../../interfaces/topic.interface";
+import {IUser} from "../../interfaces/user.interface";
+import {UserService} from "../../services/user.service";
 
 @Component({
   selector: 'app-topic-card',
@@ -9,9 +11,23 @@ import {ITopic} from "../../interfaces/topic.interface";
 export class TopicCardComponent implements OnInit{
 
     @Input() topic : ITopic[] | any;
-    constructor() { }
+
+    users: IUser[] = [];
+    currentUser: IUser | any =[];
+    constructor(private userService : UserService) { }
 
     ngOnInit(): void {
-      console.log(this.topic)
+      this.getUsers();
+    }
+    getUsers(){
+      this.userService.getUsers().subscribe(data => {
+        this.users = data;
+        this.getCurrentUser(this.topic.userId);
+      })
+    }
+
+    getCurrentUser(userId: number) {
+      this.currentUser = this.users.find(user => user.id === userId);
+      console.log(this.currentUser);
     }
 }

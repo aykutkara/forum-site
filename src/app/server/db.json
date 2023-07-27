@@ -50,6 +50,18 @@
         "bilgisayar"
       ],
       "date" : "26-07-2023"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "title": "Bu monitörü almalı mıyım?",
+      "views": 67,
+      "tags" : [
+        "monitör",
+        "teknoloji",
+        "bilgisayar"
+      ],
+      "date" : "27-07-2023"
     }
   ]
 

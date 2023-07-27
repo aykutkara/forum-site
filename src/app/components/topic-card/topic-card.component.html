@@ -1,6 +1,6 @@
 <div class="topic-card">
-  <img class="topic-card--img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3OfrfPtThk3uKMeVo9h7O2EESQVbuLCHqUcIjfkbgmw&s" alt="">
-  <p class="topic-card--username">aykutkara123</p>
+  <img class="topic-card--img" src="{{currentUser.imageUrl}}" alt="">
+  <p class="topic-card--username">{{currentUser.username}}</p>
   <p class="topic-card--topic-title">{{topic.title | truncate : 53}}</p>
   <p class="topic-card--topic-date">{{topic.date}}</p>
   <p class="topic-card--topic-views">{{topic.views}}</p>
