@@ -1,0 +1,56 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "john_doe",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo7WfE6wFfdpeFph92LdEFJFnula0ecIObiQ&usqp=CAU"
+    },
+    {
+      "id": 2,
+      "username": "jane_smith",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFWBnyvJtrWYVL5q2Nwl1UkCOxOPxFGoORjg&usqp=CAU"
+    },
+    {
+      "id": 3,
+      "username": "mike_williams",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo7WfE6wFfdpeFph92LdEFJFnula0ecIObiQ&usqp=CAU"
+    },
+    {
+      "id": 4,
+      "username": "emma_johnson",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFWBnyvJtrWYVL5q2Nwl1UkCOxOPxFGoORjg&usqp=CAU"
+    },
+    {
+      "id": 5,
+      "username": "alex_miller",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3OfrfPtThk3uKMeVo9h7O2EESQVbuLCHqUcIjfkbgmw&s"
+    }
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "Yeni 40 Serisi ekran kartarı için ne düşünüyorsunuz?",
+      "views": 82,
+      "tags" : [
+        "ekran kartı",
+        "40 serisi",
+        "nvidia"
+      ],
+      "date" : "26-07-2023"
+    },
+    {
+      "id": 2,
+      "userId": 4,
+      "title": "Bu monitörü almalı mıyım?",
+      "views": 32,
+      "tags" : [
+        "monitör",
+        "teknoloji",
+        "bilgisayar"
+      ],
+      "date" : "26-07-2023"
+    }
+  ]
+
+}

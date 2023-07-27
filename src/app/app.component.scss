@@ -1,0 +1,75 @@
+@import "src/app/scss/media-queries";
+@import "src/app/scss/variables";
+
+
+@mixin align-items-center{
+  display: flex;
+  align-items: center;
+}
+
+.page-content{
+  padding: 1rem;
+  &__left{
+    width: 75%;
+    background-color: white;
+
+    margin-right: 1rem;
+    padding: 1rem;
+
+    @include mobile{
+      width: 100%;
+      margin: 0;
+    }
+
+    @include tablet{
+      width: 100%;
+      margin:0;
+    }
+  }
+  &__right{
+    width: 25%;
+
+    &__tags{
+      color: $text-color;
+      background-color: white;
+      .tags-title{
+        @include align-items-center;
+        justify-content: center;
+        .tags-title-p{
+          margin: 1rem;
+        }
+      }
+      .tags-content{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+
+        .tags-content--a{
+          text-decoration: none;
+          color: $text-color;
+
+          margin: 1rem 2rem;
+        }
+      }
+    }
+
+    @include mobile{
+      display: none;
+    }
+    @include tablet{
+      display: none;
+    }
+
+
+  }
+
+  @include mobile{
+    @include align-items-center;
+    justify-content: center;
+  }
+
+  @include tablet{
+    @include align-items-center;
+    justify-content: center;
+  }
+}

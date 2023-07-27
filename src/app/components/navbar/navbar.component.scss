@@ -1,0 +1,39 @@
+@import "src/app/scss/media-queries";
+@import "src/app/scss/variables";
+
+
+@mixin align-items-center{
+  display: flex;
+  align-items: center;
+}
+
+.navbar{
+  @include align-items-center;
+
+  &__logo{
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 2rem 20rem;
+    color : $text-color;
+  }
+
+  @include mobile{
+    @include align-items-center;
+    justify-content: center;
+
+    &__logo{
+      margin: 2rem 0;
+      font-size: 2rem;
+    }
+  }
+  @include tablet{
+    @include align-items-center;
+    justify-content: center;
+
+    &__logo{
+      margin: 2rem 0;
+      font-size: 2rem;
+    }
+  }
+}

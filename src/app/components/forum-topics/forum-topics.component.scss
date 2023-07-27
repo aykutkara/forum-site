@@ -1,0 +1,44 @@
+@import "src/app/scss/media-queries";
+@import "src/app/scss/variables";
+
+
+@mixin align-items-center{
+  display: flex;
+  align-items: center;
+}
+
+.forum-topics{
+  &__top{
+    @include align-items-center;
+    justify-content: space-between;
+
+    &__left{
+      @include align-items-center;
+      justify-content: flex-start;
+
+      &--title{
+        font-size: 1.5rem;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+      }
+    }
+    &__right{
+      @include align-items-center;
+      justify-content: flex-end;
+
+      .new-topic-btn{
+        margin: 0 1rem;
+      }
+    }
+  }
+  &__content{
+    @include align-items-center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  &__bottom{
+    @include align-items-center;
+    justify-content: center;
+
+  }
+}
