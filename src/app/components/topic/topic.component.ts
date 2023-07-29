@@ -25,18 +25,28 @@ export class TopicComponent implements OnInit {
     this.route.params.subscribe(params => {
       this.topicId = +params['id'];
     });
+    this.getTopic();
+    this.getCurrentUser();
+
+  }
+  getTopic() {
     this.topicService.getTopic(this.topicId).subscribe((data: ITopic) => {
       this.topic = data;
-      console.log(this.topic);
-      // @ts-ignore
-      for (let tag of this.topic.tags) {
-        console.log(tag);
-      }
+      this.updateViewCount();
     });
+  }
+
+  getCurrentUser() {
     this.userService.getUsers().subscribe(data => {
       this.currentUser = data.find(user => user.id === this.topic?.userId);
     });
-
   }
 
+  updateViewCount() {
+    if (this.topic){
+      this.topic.views++;
+      console.log(this.topic.views,"views");
+      this.topicService.updateTopic(this.topic).subscribe();
+    }
+  }
 }
