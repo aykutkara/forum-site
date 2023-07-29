@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {ITopic} from "../../interfaces/topic.interface";
 import {IUser} from "../../interfaces/user.interface";
 import {UserService} from "../../services/user.service";
@@ -11,7 +11,7 @@ import {UserService} from "../../services/user.service";
 export class TopicCardComponent implements OnInit{
 
     @Input() topic : ITopic[] | any;
-
+    @Output() sendMessage = new EventEmitter<string>();
     users: IUser[] = [];
     currentUser: IUser | any =[];
 
@@ -32,6 +32,13 @@ export class TopicCardComponent implements OnInit{
       this.currentUser = this.users.find(user => user.id === userId);
     }
 
+    deleteOrEdit(message: string,event:any){
+      this.sendMessage.emit(message);
+      event.stopPropagation();
+    }
 
 
+  openMenu(event: MouseEvent) {
+    event.stopPropagation();
+  }
 }

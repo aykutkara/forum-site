@@ -1,0 +1,34 @@
+<div class="topic-title">
+  <p class="topic-title--p">{{topic?.title}}</p>
+  <div class="topic-title__info">
+    <p class="topic-title__info--p">
+      <i class="fas fa-user"></i>
+      {{currentUser?.username}}
+    </p>
+    <p class="topic-title__info--p">
+      <i class="fas fa-clock"></i>
+      {{topic?.date}}
+    </p>
+  </div>
+</div>
+<div class="topic-description">
+  <div class="topic-description__left">
+    <div class="topic-description__left__user">
+      <img src="{{currentUser?.imageUrl}}" alt="avatar" class="topic-description__left__user--img">
+      <p class="topic-description__left__user--username">
+        <i class="fas fa-user"></i>
+        {{currentUser?.username}}
+      </p>
+    </div>
+  </div>
+  <div class="topic-description__right">
+    <div class="topic-description__right--description" [innerHTML]="topic?.description"></div>
+    <div class="topic-description__right--tags" >
+      <a href="" *ngFor="let tag of topic?.tags">#{{tag}}</a>
+    </div>
+  </div>
+</div>
+<button class="btn btn-primary w-100 my-2">Yorum Yap</button>
+
+
+

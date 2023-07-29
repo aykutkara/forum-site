@@ -21,7 +21,7 @@
   </div>
   <hr>
   <div class="forum-topics__content">
-    <app-topic-card [topic]="topic" *ngFor="let topic of paginatedTopics | topicFilter : sortType "></app-topic-card>
+    <app-topic-card [topic]="topic" (sendMessage)="deleteOrEditTopic($event,topic)"  *ngFor="let topic of paginatedTopics | topicFilter : sortType" (click)="cardClick(topic)"></app-topic-card>
   </div>
   <div class="forum-topics__bottom">
     <nav aria-label="Page navigation example">
@@ -41,7 +41,7 @@
 </div>
 
 <div class="modal" id="topic-modal" *ngIf="isModalOpen">
-  <div class="modal-dialog modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Yeni Konu Oluştur</h5>
@@ -60,8 +60,9 @@
                     [ngClass]="{ 'invalid-input': topicForm.get('title')?.invalid && topicForm.get('title')?.touched }"
             >
           </div>
-          <div *ngFor="let tag of tags.controls; let i = index">
-            <div [formGroup] = tag>
+          <angular-editor formControlName="description" [config]="editorConfig"></angular-editor>
+          <div *ngFor="let tag of tags.controls; let i = index" class="tag-div">
+            <div [formGroup]=tag>
               <div class="input-group mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-default2">Etiket</span>
                 <input
@@ -78,8 +79,7 @@
               </div>
             </div>
           </div>
-
-          <button type="button" class="btn btn-primary mb-2" (click)="addTag()">Etiket Ekle</button>
+          <button type="button" class="btn btn-primary mb-2 mt-2" (click)="addTag()">Etiket Ekle</button>
 
         </div>
         <div class="modal-footer">

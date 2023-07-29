@@ -4,10 +4,18 @@
   <p class="topic-card--topic-title">{{topic.title | truncate : 49}}</p>
   <p class="topic-card--topic-date">{{topic.date}}</p>
   <p class="topic-card--topic-views">{{topic.views }}</p>
-  <div class="topic-card__setting">
-    <button class="topic-card__setting--btn">
+  <div class="btn-group dropend topic-card__setting">
+    <button type="button" class="btn topic-card__setting--btn" data-bs-toggle="dropdown" aria-expanded="false" (click)="openMenu($event)">
       <i class="fas fa-ellipsis-vertical"></i>
     </button>
+    <ul class="dropdown-menu">
+      <li>
+        <a class="dropdown-item" (click)="deleteOrEdit('edit',$event)">Düzenle</a>
+      </li>
+      <li>
+        <a class="dropdown-item" (click)="deleteOrEdit('delete',$event)">Sil</a>
+      </li>
+    </ul>
   </div>
 </div>
 

@@ -10,6 +10,9 @@ import {TruncatePipe} from "./pipes/truncate.pipe";
 import {HttpClientModule} from "@angular/common/http";
 import {TopicFilterPipe} from "./pipes/topic-filter.pipe";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {AngularEditorModule} from "@kolkov/angular-editor";
+import { TopicComponent } from './components/topic/topic.component';
+
 
 @NgModule({
   declarations: [
@@ -18,14 +21,16 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     ForumTopicsComponent,
     TopicCardComponent,
     TruncatePipe,
-    TopicFilterPipe
+    TopicFilterPipe,
+    TopicComponent
   ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         HttpClientModule,
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        AngularEditorModule,
     ],
   providers: [],
   bootstrap: [AppComponent]
