@@ -82,7 +82,8 @@ export class ForumTopicsComponent implements OnInit {
           description: this.topicForm.value.description,
           views: this.selectedCard.views,
           tags: this.topicForm.value.tags.map((tag: { tagName: string; }) => tag.tagName),
-          date: this.selectedCard.date
+          date: this.selectedCard.date,
+          comments: this.selectedCard.comments
         };
 
         this.topicService.updateTopic(updateTopic).subscribe(
@@ -113,7 +114,8 @@ export class ForumTopicsComponent implements OnInit {
           description :this.topicForm.value.description,
           views: 0,
           tags:this.topicForm.value.tags.map((tag: { tagName: string; }) => tag.tagName),
-          date: this.getFormattedDate()
+          date: this.getFormattedDate(),
+          comments: []
         };
 
         this.topicService.addTopic(newTopic).subscribe(
@@ -152,9 +154,6 @@ export class ForumTopicsComponent implements OnInit {
         .catch((error) => {
           console.error('Yönlendirme hatası:', error);
         });
-
-
-    console.log(this.selectedCard, this.messageFromCardComp);
   }
   deleteOrEditTopic(message: string,topic: ITopic) {
     this.selectedCard = topic;

@@ -11,10 +11,10 @@
           Sıralama
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#" (click)="getOldestTopics()">Tarih - Eskiden Yeniye</a></li>
-          <li><a class="dropdown-item" href="#" (click)="getNewestTopics()">Tarih - Yeniden Eskiye</a></li>
-          <li><a class="dropdown-item" href="#" (click)="getViewsHighToLow()">Görüntülenme - Çoktan Aza</a></li>
-          <li><a class="dropdown-item" href="#" (click)="getViewsLowToHigh()">Görüntülenme - Azdan Çoğa</a></li>
+          <li><button class="dropdown-item" (click)="getOldestTopics()">Tarih - Eskiden Yeniye</button></li>
+          <li><button class="dropdown-item"  (click)="getNewestTopics()">Tarih - Yeniden Eskiye</button></li>
+          <li><button class="dropdown-item"  (click)="getViewsHighToLow()">Görüntülenme - Çoktan Aza</button></li>
+          <li><button class="dropdown-item"  (click)="getViewsLowToHigh()">Görüntülenme - Azdan Çoğa</button></li>
         </ul>
       </div>
     </div>
@@ -80,7 +80,6 @@
             </div>
           </div>
           <button type="button" class="btn btn-primary mb-2 mt-2" (click)="addTag()">Etiket Ekle</button>
-
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="closeModal()">Kapat</button>

@@ -6,4 +6,5 @@ export interface ITopic {
   views: number;
   tags: string[] | undefined;
   date : string;
+  comments: string[] | undefined;
 }
