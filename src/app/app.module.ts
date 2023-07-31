@@ -8,7 +8,6 @@ import { ForumTopicsComponent } from './components/forum-topics/forum-topics.com
 import { TopicCardComponent } from './components/topic-card/topic-card.component';
 import {TruncatePipe} from "./pipes/truncate.pipe";
 import {HttpClientModule} from "@angular/common/http";
-import {TopicFilterPipe} from "./pipes/topic-filter.pipe";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {AngularEditorModule} from "@kolkov/angular-editor";
 import { TopicComponent } from './components/topic/topic.component';
@@ -21,8 +20,7 @@ import { TopicComponent } from './components/topic/topic.component';
     ForumTopicsComponent,
     TopicCardComponent,
     TruncatePipe,
-    TopicFilterPipe,
-    TopicComponent
+    TopicComponent,
   ],
     imports: [
         BrowserModule,

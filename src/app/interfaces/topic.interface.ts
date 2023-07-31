@@ -1,3 +1,5 @@
+import {IComment} from "./comment.interface";
+
 export interface ITopic {
   id: number;
   userId: number;
@@ -6,5 +8,5 @@ export interface ITopic {
   views: number;
   tags: string[] | undefined;
   date : string;
-  comments: string[] | undefined;
+  comments?: IComment[] | undefined;
 }

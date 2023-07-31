@@ -15,6 +15,7 @@ export class ForumTopicsComponent implements OnInit {
 
 
   topics$ :Observable<ITopic[]> | any =[];
+  filteredTopics: ITopic[] = [];
   currentPage: number = 1;
   itemsPerPage: number = 10;
   totalPage: number = 0;
@@ -39,6 +40,7 @@ export class ForumTopicsComponent implements OnInit {
     this.topics$ = this.topicService.topics.subscribe(
       (data : ITopic[]) => {
         this.topics$ = data;
+        this.filterTopics();
         console.log(this.topics$[this.topics$.length - 1]);
       }
     );
@@ -91,6 +93,7 @@ export class ForumTopicsComponent implements OnInit {
             console.log('Konu güncellendi:', response);
             this.topicService.topics.subscribe((topics) => {
               this.topics$ = topics;
+              this.getTopics();
             });
           },
           (error) => {
@@ -123,6 +126,8 @@ export class ForumTopicsComponent implements OnInit {
             console.log('Yeni konu eklendi:', response);
             this.topicService.topics.subscribe((topics) => {
               this.topics$ = topics;
+              this.getTopics();
+
             });
           },
           (error) => {
@@ -193,28 +198,35 @@ export class ForumTopicsComponent implements OnInit {
   }
   getOldestTopics() {
     this.sortType = 'oldest';
+    this.filterTopics();
   }
   getNewestTopics() {
     this.sortType = 'newest';
+    this.filterTopics();
+
   }
   getViewsLowToHigh() {
-      this.sortType = 'viewsLowToHigh';
+    this.sortType = 'viewsLowToHigh';
+    this.filterTopics();
+
   }
   getViewsHighToLow() {
     this.sortType = 'viewsHighToLow';
+    this.filterTopics();
+
   }
 
 
   get paginatedTopics(): ITopic[] {
-    if (!this.topics$) return [];
+    if (!this.filteredTopics) return [];
     const startIndex = (this.currentPage - 1) * this.itemsPerPage;
     const endIndex = startIndex + this.itemsPerPage;
-    return this.topics$.slice(startIndex, endIndex);
+    return this.filteredTopics.slice(startIndex, endIndex);
   }
 
   get totalPages(): number[] {
-    if (!this.topics$) return [];
-    const totalTopics = this.topics$.length;
+    if (!this.filteredTopics) return [];
+    const totalTopics = this.filteredTopics.length;
     this.totalPage = Math.ceil(totalTopics / this.itemsPerPage);
     return Array(this.totalPage).fill(0).map((_, index) => index + 1);
   }
@@ -222,6 +234,25 @@ export class ForumTopicsComponent implements OnInit {
   changePage(page: number) {
     if (page >= 1 && page <= this.totalPages.length) {
       this.currentPage = page;
+    }
+  }
+  filterTopics() {
+    this.filteredTopics = [...this.topics$];
+    if (this.sortType === 'oldest') {
+      // Tarihe göre sıralama (en eski en başta)
+      this.filteredTopics.sort((a, b) => a.id - b.id);
+    } else if (this.sortType === 'newest') {
+      // Tarihe göre sıralama (en yeni en başta)
+      this.filteredTopics.sort((a, b) => b.id - a.id);
+    } else if (this.sortType === 'viewsLowToHigh') {
+      // Görüntülenme sayısına göre sıralama (azdan çoğa)
+      this.filteredTopics.sort((a, b) => a.views - b.views);
+    } else if (this.sortType === 'viewsHighToLow') {
+      // Görüntülenme sayısına göre sıralama (çoktan aza)
+      this.filteredTopics.sort((a, b) => b.views - a.views);
+    } else {
+      // Filtre yoksa en yeniyi döndür
+      this.filteredTopics.sort((a, b) => b.id - a.id);
     }
   }
 

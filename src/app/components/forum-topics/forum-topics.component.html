@@ -21,19 +21,19 @@
   </div>
   <hr>
   <div class="forum-topics__content">
-    <app-topic-card [topic]="topic" (sendMessage)="deleteOrEditTopic($event,topic)"  *ngFor="let topic of paginatedTopics | topicFilter : sortType" (click)="cardClick(topic)"></app-topic-card>
+    <app-topic-card [topic]="topic" (sendMessage)="deleteOrEditTopic($event,topic)"  *ngFor="let topic of paginatedTopics" (click)="cardClick(topic)"></app-topic-card>
   </div>
   <div class="forum-topics__bottom">
     <nav aria-label="Page navigation example">
       <ul class="pagination">
         <li class="page-item" [ngClass]="{ 'disabled': currentPage === 1 }">
-          <a class="page-link" href="#" (click)="changePage(currentPage - 1)">Previous</a>
+          <button class="page-link" (click)="changePage(currentPage - 1)">Önceki Sayfa</button>
         </li>
         <li class="page-item" *ngFor="let page of totalPages" [ngClass]="{ 'active': page === currentPage }">
-          <a class="page-link" href="#" (click)="changePage(page)">{{ page }}</a>
+          <button class="page-link" (click)="changePage(page)">{{ page }}</button>
         </li>
         <li class="page-item" [ngClass]="{ 'disabled': currentPage === totalPage }">
-          <a class="page-link" href="#" (click)="changePage(currentPage + 1)">Next</a>
+          <button class="page-link"  (click)="changePage(currentPage + 1)">Sonraki Sayfa</button>
         </li>
       </ul>
     </nav>

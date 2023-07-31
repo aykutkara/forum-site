@@ -32,9 +32,9 @@
       "userId": 1,
       "title": "Yeni 40 Serisi ekran kartarı için ne düşünüyorsunuz?",
       "description": "Yeni 40 serisi ekran kartları hakkında çok konuşuluyor. Sizce nasıl olacak? ",
-      "views": 232,
+      "views": 593,
       "tags": [
-        "ekran kartı",
+        "ekrankartı",
         "40 serisi",
         "nvidia"
       ],
@@ -44,25 +44,133 @@
           "id": 1,
           "userId": 2,
           "comment": "Deneme 1 ",
-          "date": "26-07-2023 10:10:41"
-        },
-        {
-          "id": 2,
-          "userId": 3,
-          "comment": "Deneme 2 ",
-          "date": "26-07-2023 10:10:42"
+          "date": "26-07-2023 10:10:41",
+          "user": {
+            "id": 2,
+            "username": "jane_smith",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFWBnyvJtrWYVL5q2Nwl1UkCOxOPxFGoORjg&usqp=CAU"
+          }
         },
         {
           "id": 3,
           "userId": 4,
           "comment": "Deneme 3 ",
-          "date": "26-07-2023 10:10:43"
+          "date": "26-07-2023 10:10:43",
+          "user": {
+            "id": 4,
+            "username": "emma_johnson",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFWBnyvJtrWYVL5q2Nwl1UkCOxOPxFGoORjg&usqp=CAU"
+          }
         },
         {
           "id": 4,
           "userId": 5,
-          "comment": "Deneme 4 ",
-          "date": "26-07-2023 10:10:44"
+          "comment": "Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4 Deneme 4",
+          "date": "26-07-2023 10:10:44",
+          "user": {
+            "id": 5,
+            "username": "alex_miller",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3OfrfPtThk3uKMeVo9h7O2EESQVbuLCHqUcIjfkbgmw&s"
+          }
+        },
+        {
+          "id": 5,
+          "userId": 3,
+          "comment": "sadasdasd&#160;<h1>asdasdasdasdasdaas</h1><h4><font face=\"Calibri\">asdasdasdasdasda</font></h4><h4><font face=\"Calibri\"><sub>asdasdasdasdasd<strike>asdas</strike>dasdasdasdasd</sub><sup>sadasdasdasdasdasd</sup><sub>sdasdasd<sub>asdasdasdasdasdasdasd<u>asdasdasdasdasdas</u></sub></sub></font></h4><pre><font face=\"Calibri\"><sub><sub><u>sadasdasdasdasdas</u><span><strike>asdasdasdasdasd</strike></span></sub></sub></font></pre><pre><hr></pre><pre>asdasdassadasdas</pre>",
+          "date": "31-07-2023 14:54:27",
+          "user": {
+            "id": 3,
+            "username": "mike_williams",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo7WfE6wFfdpeFph92LdEFJFnula0ecIObiQ&usqp=CAU"
+          }
+        },
+        {
+          "id": 6,
+          "userId": 5,
+          "comment": "adasaaass",
+          "date": "31-07-2023 15:30:54",
+          "user": {
+            "id": 5,
+            "username": "alex_miller",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3OfrfPtThk3uKMeVo9h7O2EESQVbuLCHqUcIjfkbgmw&s"
+          }
+        },
+        {
+          "id": 7,
+          "userId": 5,
+          "comment": "a",
+          "date": "31-07-2023 16:10:17",
+          "user": {
+            "id": 5,
+            "username": "alex_miller",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3OfrfPtThk3uKMeVo9h7O2EESQVbuLCHqUcIjfkbgmw&s"
+          }
+        },
+        {
+          "id": 8,
+          "userId": 4,
+          "comment": "b",
+          "date": "31-07-2023 16:10:19",
+          "user": {
+            "id": 4,
+            "username": "emma_johnson",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFWBnyvJtrWYVL5q2Nwl1UkCOxOPxFGoORjg&usqp=CAU"
+          }
+        },
+        {
+          "id": 9,
+          "userId": 2,
+          "comment": "c",
+          "date": "31-07-2023 16:10:21",
+          "user": {
+            "id": 2,
+            "username": "jane_smith",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFWBnyvJtrWYVL5q2Nwl1UkCOxOPxFGoORjg&usqp=CAU"
+          }
+        },
+        {
+          "id": 10,
+          "userId": 2,
+          "comment": "d",
+          "date": "31-07-2023 16:10:22",
+          "user": {
+            "id": 2,
+            "username": "jane_smith",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFWBnyvJtrWYVL5q2Nwl1UkCOxOPxFGoORjg&usqp=CAU"
+          }
+        },
+        {
+          "id": 11,
+          "userId": 2,
+          "comment": "e",
+          "date": "31-07-2023 16:10:24",
+          "user": {
+            "id": 2,
+            "username": "jane_smith",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFWBnyvJtrWYVL5q2Nwl1UkCOxOPxFGoORjg&usqp=CAU"
+          }
+        },
+        {
+          "id": 12,
+          "userId": 5,
+          "comment": "d",
+          "date": "31-07-2023 16:10:33",
+          "user": {
+            "id": 5,
+            "username": "alex_miller",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3OfrfPtThk3uKMeVo9h7O2EESQVbuLCHqUcIjfkbgmw&s"
+          }
+        },
+        {
+          "id": 13,
+          "userId": 2,
+          "comment": "e",
+          "date": "31-07-2023 16:10:35",
+          "user": {
+            "id": 2,
+            "username": "jane_smith",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFWBnyvJtrWYVL5q2Nwl1UkCOxOPxFGoORjg&usqp=CAU"
+          }
         }
       ]
     },
@@ -71,7 +179,7 @@
       "userId": 4,
       "title": "Bu monitörü almalı mıyım?",
       "description": "Deneme 123 ",
-      "views": 33,
+      "views": 34,
       "tags": [
         "monitör",
         "teknoloji",
@@ -101,7 +209,7 @@
       "date": "27-07-2023 23:21:27",
       "comments": [
         {
-          "id": 6,
+          "id": 1,
           "userId": 2,
           "comment": "Deneme 123 ",
           "date": "26-07-2023 18:31:47"
@@ -122,7 +230,7 @@
       "date": "27-07-2023 16:38:58",
       "comments": [
         {
-          "id": 7,
+          "id": 1,
           "userId": 2,
           "comment": "Deneme 123 ",
           "date": "26-07-2023 18:31:47"
@@ -149,7 +257,7 @@
       "date": "27-07-2023 16:39:14",
       "comments": [
         {
-          "id": 8,
+          "id": 1,
           "userId": 1,
           "comment": "Deneme 123 ",
           "date": "26-07-2023 18:31:47"
@@ -161,14 +269,14 @@
       "userId": 5,
       "title": "sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo sdpofjsdpofkposdfksdpo ",
       "description": "Deneme 123 ",
-      "views": 10000006,
+      "views": 10000008,
       "tags": [
         "a"
       ],
       "date": "27-07-2023 16:45:35",
       "comments": [
         {
-          "id": 9,
+          "id": 1,
           "userId": 1,
           "comment": "Deneme 123 ",
           "date": "26-07-2023 18:31:47"
@@ -180,7 +288,7 @@
       "userId": 4,
       "title": "dene",
       "description": "<h1>asdasdasd</h1><h3><u>asdasdassadas</u></h3><div><u>asdas<sup>sadasdasd</sup></u></div><div><sup><font face=\"Calibri\">dsgfsdgdfgdfgd</font><font face=\"Comic Sans MS\">add</font></sup></div><div><sup><font face=\"Comic Sans MS\" color=\"#911d1d\">asdasdasdasdasdas</font></sup></div>",
-      "views": 8,
+      "views": 13,
       "tags": [
         "ekrankartı",
         "bilgisayar",
@@ -189,7 +297,7 @@
       "date": "28-07-2023 15:47:08",
       "comments": [
         {
-          "id": 10,
+          "id": 1,
           "userId": 3,
           "comment": "Deneme 123 ",
           "date": "26-07-2023 18:31:47"
@@ -201,7 +309,7 @@
       "userId": 2,
       "title": "a",
       "description": "sdad",
-      "views": 49,
+      "views": 50,
       "tags": [
         "a",
         "b",
@@ -211,7 +319,7 @@
       "date": "28-07-2023 16:49:36",
       "comments": [
         {
-          "id": 11,
+          "id": 1,
           "userId": 1,
           "comment": "Deneme 123 ",
           "date": "26-07-2023 18:31:47"
@@ -223,13 +331,43 @@
       "userId": 2,
       "title": "sdasd",
       "description": "deneme deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme",
-      "views": 11,
+      "views": 27,
       "tags": [
         "asdasd",
         "sadasd",
         "sadasd"
       ],
       "date": "29-07-2023 22:28:21",
+      "comments": []
+    },
+    {
+      "id": 18,
+      "userId": 5,
+      "title": "aaa",
+      "description": "dsds",
+      "views": 1,
+      "tags": [],
+      "date": "31-07-2023 15:54:26",
+      "comments": []
+    },
+    {
+      "id": 19,
+      "userId": 2,
+      "title": "a",
+      "description": "sad",
+      "views": 3,
+      "tags": [],
+      "date": "31-07-2023 15:56:00",
+      "comments": []
+    },
+    {
+      "id": 20,
+      "userId": 3,
+      "title": "b",
+      "description": "sad",
+      "views": 2,
+      "tags": [],
+      "date": "31-07-2023 15:56:24",
       "comments": []
     }
   ]

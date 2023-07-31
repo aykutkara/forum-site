@@ -99,7 +99,11 @@
 
 .comments{
 
-
+  &__pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
   &__comment{
     display: flex;
     margin-top: 1rem;
@@ -145,15 +149,34 @@
       &--description{
         word-wrap: break-word;
       }
-      &--date{
+      &__detail{
         @include align-items-center;
-        margin-top: 1rem;
-        i{
-          margin-right: 0.3rem;
-          color: $primary-color;
-        }
+        justify-content: space-between;
+        &--date{
+          @include align-items-center;
+          margin-top: 1rem;
+          i{
+            margin-right: 0.3rem;
+            color: $primary-color;
+          }
 
+        }
+        &--settings{
+          @include align-items-center;
+          margin-top: 1rem;
+          .comment-edit-btn{
+            margin-right: 0.3rem;
+            font-size: 0.9rem;
+          }
+          i{
+            margin-right: 0.3rem;
+            color: white;
+            cursor: pointer;
+          }
+
+        }
       }
+
     }
   }
 }
