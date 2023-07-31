@@ -41,7 +41,6 @@ export class ForumTopicsComponent implements OnInit {
       (data : ITopic[]) => {
         this.topics$ = data;
         this.filterTopics();
-        console.log(this.topics$[this.topics$.length - 1]);
       }
     );
   }

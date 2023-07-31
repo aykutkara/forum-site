@@ -223,9 +223,8 @@
       "description": "Deneme 123 ",
       "views": 2,
       "tags": [
-        {
-          "tagName": "araba"
-        }
+        "araba",
+        "ev"
       ],
       "date": "27-07-2023 16:38:58",
       "comments": [
@@ -242,17 +241,11 @@
       "userId": 1,
       "title": "ssa",
       "description": "Deneme 123 ",
-      "views": 1,
+      "views": 2,
       "tags": [
-        {
-          "tagName": "a"
-        },
-        {
-          "tagName": "b"
-        },
-        {
-          "tagName": "c"
-        }
+        "araba",
+        "ev",
+        "koltuk"
       ],
       "date": "27-07-2023 16:39:14",
       "comments": [
@@ -271,7 +264,10 @@
       "description": "Deneme 123 ",
       "views": 10000008,
       "tags": [
-        "a"
+        "araba",
+        "ev",
+        "koltuk",
+        "sakız"
       ],
       "date": "27-07-2023 16:45:35",
       "comments": [
@@ -311,10 +307,11 @@
       "description": "sdad",
       "views": 50,
       "tags": [
-        "a",
-        "b",
-        "c",
-        "d"
+        "araba",
+        "ev",
+        "koltuk",
+        "sakız",
+        "kalem"
       ],
       "date": "28-07-2023 16:49:36",
       "comments": [
@@ -333,9 +330,11 @@
       "description": "deneme deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme&#160;deneme",
       "views": 27,
       "tags": [
-        "asdasd",
-        "sadasd",
-        "sadasd"
+        "araba",
+        "ev",
+        "koltuk",
+        "sakız",
+        "kalem"
       ],
       "date": "29-07-2023 22:28:21",
       "comments": []
@@ -345,8 +344,14 @@
       "userId": 5,
       "title": "aaa",
       "description": "dsds",
-      "views": 1,
-      "tags": [],
+      "views": 2,
+      "tags": [
+        "araba",
+        "ev",
+        "koltuk",
+        "sakız",
+        "kalem"
+      ],
       "date": "31-07-2023 15:54:26",
       "comments": []
     },
@@ -355,8 +360,14 @@
       "userId": 2,
       "title": "a",
       "description": "sad",
-      "views": 3,
-      "tags": [],
+      "views": 4,
+      "tags": [
+        "araba",
+        "ev",
+        "koltuk",
+        "sakız",
+        "kalem"
+      ],
       "date": "31-07-2023 15:56:00",
       "comments": []
     },
@@ -365,9 +376,27 @@
       "userId": 3,
       "title": "b",
       "description": "sad",
-      "views": 2,
-      "tags": [],
+      "views": 6,
+      "tags": [
+        "araba",
+        "ev",
+        "koltuk",
+        "sakız",
+        "kalem"
+      ],
       "date": "31-07-2023 15:56:24",
+      "comments": []
+    },
+    {
+      "id": 21,
+      "userId": 5,
+      "title": "z",
+      "description": "asd",
+      "views": 2,
+      "tags": [
+        "araba"
+      ],
+      "date": "31-07-2023 17:13:24",
       "comments": []
     }
   ]

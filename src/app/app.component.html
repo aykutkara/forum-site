@@ -8,12 +8,8 @@
       <div class="tags-title">
         <p class="tags-title-p">Sık Kullanılan etiketler</p>
       </div>
-      <div class="tags-content">
-        <a class="tags-content--a" href="#">#Teknoloji</a>
-        <a class="tags-content--a" href="#">#Araba</a>
-        <a class="tags-content--a" href="#">#Yemek</a>
-        <a class="tags-content--a" href="#">#Ekonomi</a>
-        <a class="tags-content--a" href="#">#Sanat</a>
+      <div class="tags-content" *ngFor="let tag of topFiveTags;let i =index">
+        <a class="tags-content--a" (click)="tagClick(tag[0])">#{{tag[0]}} ({{tag[1]}})</a>
       </div>
     </div>
   </div>

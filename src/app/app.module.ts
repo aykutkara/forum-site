@@ -11,6 +11,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {AngularEditorModule} from "@kolkov/angular-editor";
 import { TopicComponent } from './components/topic/topic.component';
+import { BestTagsComponent } from './components/best-tags/best-tags.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { TopicComponent } from './components/topic/topic.component';
     TopicCardComponent,
     TruncatePipe,
     TopicComponent,
+    BestTagsComponent,
   ],
     imports: [
         BrowserModule,
