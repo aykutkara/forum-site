@@ -39,7 +39,6 @@ export class AppComponent implements OnInit{
         }
       });
     });
-    console.log(tagCounts)
     return tagCounts;
   }
 
@@ -49,7 +48,6 @@ export class AppComponent implements OnInit{
     const sortedTags = Array.from(tagCounts.entries()).sort((a, b) => b[1] - a[1]);
 
     this.topFiveTags = sortedTags.slice(0, 5);
-    console.log(this.topFiveTags)
   }
 
   tagClick(tagName: any) {

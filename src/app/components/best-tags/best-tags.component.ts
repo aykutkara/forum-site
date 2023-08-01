@@ -14,14 +14,14 @@ export class BestTagsComponent implements OnInit{
   tagName: string = '';
   topics : Observable<ITopic[]> |any = [];
   filteredTopics: ITopic[] = [];
-  constructor(private topicService: TopicService,private route: ActivatedRoute) {
+  constructor(private topicService: TopicService,private route: ActivatedRoute, private router: Router) {
   }
   ngOnInit(): void {
     this.route.params.subscribe(params => {
       this.tagName = params['index'];
-      console.log(this.tagName);
+      this.getTopics();
     });
-    this.getTopics();
+
   }
 
   getTopics() {
@@ -37,8 +37,15 @@ export class BestTagsComponent implements OnInit{
     this.filteredTopics = this.topics.filter((topic: ITopic) => topic.tags?.find(
         (tag: string) => tag === tagName)
     );
-    console.log(this.filteredTopics);
   }
 
-  protected readonly JSON = JSON;
+  cardClick(topic:ITopic){
+    this.router.navigate(['topic',topic.id])
+      .then(() => {
+        console.log('Yönlendirme başarılı.');
+      })
+      .catch((error) => {
+        console.error('Yönlendirme hatası:', error);
+      });
+  }
 }

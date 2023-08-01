@@ -1,1 +1,6 @@
-<p *ngFor="let topic of filteredTopics">{{JSON.stringify(topic)}}</p>
+<div class="container">
+  <h3 class="mb-3"><span class="text-primary">{{tagName.toUpperCase()}}</span> etiketine göre filtrelenmiş konular</h3>
+  <div class="topics">
+    <app-topic-card *ngFor="let topic of filteredTopics" [topic]="topic" (click)="cardClick(topic)"></app-topic-card>
+  </div>
+</div>

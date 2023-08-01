@@ -79,8 +79,13 @@ export class TopicComponent implements OnInit {
     else {
       if (this.commentsForm.valid) {
         this.rndmUser = Math.floor(Math.random() * 5) + 1;
-        const lastId = this.comments![this.comments!.length - 1].id;
-
+        let lastId:number;
+        if (this.comments === undefined || this.comments.length === 0) {
+          lastId = 0;
+        }
+        else {
+          lastId = this.comments![this.comments!.length - 1].id;
+        }
         const newComment: IComment = {
           id: lastId + 1,
           userId: this.rndmUser,
