@@ -54,22 +54,25 @@
     }
 
     @include mobile{
-      display: none;
+      width: 100%;
     }
     @include tablet{
-      display: none;
+      width: 100%;
     }
-
 
   }
 
   @include mobile{
     @include align-items-center;
     justify-content: center;
+    flex-direction: column;
+
   }
 
   @include tablet{
     @include align-items-center;
     justify-content: center;
+    flex-direction: column;
+
   }
 }

@@ -21,7 +21,6 @@
   @include mobile{
     @include align-items-center;
     justify-content: center;
-
     &__logo{
       margin: 2rem 0;
       font-size: 2rem;

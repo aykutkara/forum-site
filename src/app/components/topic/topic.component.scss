@@ -51,6 +51,12 @@
     width: 20%;
     background-color: #c9c3c3;
     border-radius: 0.35rem 0 0 0.35rem;
+    @include mobile{
+      min-width: 30%;
+    }
+    @include tablet{
+      min-width: 30%;
+    }
 
     &__user{
       @include align-items-center;
@@ -70,6 +76,7 @@
           color: $primary-color;
         }
 
+
       }
     }
   }
@@ -81,17 +88,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     &--description{
       word-wrap: break-word;
     }
     &--tags{
       @include align-items-center;
       margin-top: 1rem;
+      word-wrap: break-word;
+
       a{
         margin-right: 1rem;
         font-weight: bold;
         text-decoration: none;
         color: $primary-color;
+
       }
     }
   }
@@ -116,7 +127,12 @@
       left: 0;
       width: 20%;
       background-color: rgb(105,135,154);
-
+      @include mobile{
+        min-width: 30%;
+      }
+      @include tablet{
+        min-width: 30%;
+      }
       &__user{
         @include align-items-center;
         flex-direction: column;
@@ -159,6 +175,12 @@
             margin-right: 0.3rem;
             color: $primary-color;
           }
+          @include mobile{
+            font-size: 0.85rem;
+          }
+          @include tablet{
+            font-size: 0.85rem;
+          }
 
         }
         &--settings{
@@ -167,12 +189,19 @@
           .comment-edit-btn{
             margin-right: 0.3rem;
             font-size: 0.9rem;
+            @include mobile{
+              font-size: 0.7rem;
+            }
+            @include tablet{
+              font-size: 0.7rem;
+            }
           }
           i{
             margin-right: 0.3rem;
             color: white;
             cursor: pointer;
           }
+
 
         }
       }
